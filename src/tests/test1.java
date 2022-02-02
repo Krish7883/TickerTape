@@ -11,7 +11,7 @@ import static utils.common_configs.flkp;
 import static utils.common_configs.product_search;
 
 
-public class test1 {
+ public class test1 {
     public static void main(String[] args) throws Exception {
         initialization init = new initialization();
         WebDriver driver = init.initialize();

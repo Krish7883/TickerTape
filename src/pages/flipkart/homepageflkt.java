@@ -32,11 +32,12 @@ public class homepageflkt {
         //WebElement.sendKeys(Keys.ENTER);
         //driver.findElement(By.className(search)).click();
         //Thread.sleep(5);
-        System.out.println("out of search");
+        //System.out.println("out of search");
     }
 
-    public void selectFirstProduct() {
+    public void selectFirstProduct() throws InterruptedException {
         List<WebElement> myList = driver.findElements(By.xpath(First_product));
+        Thread.sleep(2000);
         //System.out.println("inside select product");
         String parent = driver.getWindowHandle();
         myList.get(0).click();
@@ -50,7 +51,7 @@ public class homepageflkt {
 
             if (!parent.equals(child_window)) {
                 driver.switchTo().window(child_window);
-                System.out.println(driver.getTitle()+"from Flipkart.com");
+                //System.out.println(driver.getTitle()+"from Flipkart.com");
             }
         }
     }

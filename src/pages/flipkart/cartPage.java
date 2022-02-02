@@ -16,12 +16,12 @@ public class cartPage {
         this.driver = driver;
     }
     public void addQuantity() throws InterruptedException {
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         List<WebElement> quantityElements=driver.findElements(By.xpath(quantityAdd));
         quantityElements.get(1).click();
     }
     public void FinalPrice() throws InterruptedException {
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         String FinalAmount = driver.findElement(By.xpath(FinalPrice)).getText();
         System.out.println(FinalAmount);
     }

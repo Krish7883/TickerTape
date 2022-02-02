@@ -15,7 +15,7 @@ public class productpageAmzn {
     }
 
     public void getProductPrice() throws InterruptedException {
-        Thread.sleep(2000);
+        Thread.sleep(5000);
         String price = driver.findElement(By.xpath(actualPrice)).getText();
 //        String price1=price.findElements(By.tagName("span")).get(1).getText();
         System.out.println("printing price from amazon product page" +price);

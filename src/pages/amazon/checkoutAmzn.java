@@ -17,6 +17,7 @@ public class checkoutAmzn {
         String Price=driver.findElement(By.xpath(cartTotal)).getText();
         //System.out.println(Price);
         String splitprice=Price.substring(0,Price.length()-3);
+        //System.out.println("Split price is "+splitprice);
         String[] arrOfStr = splitprice.trim().split(",", 3);
         if (arrOfStr.length == 2) {
             intPrice = Integer.parseInt(String.join("", arrOfStr[0],arrOfStr[1]));
